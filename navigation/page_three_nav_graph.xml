@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/page_three_nav_graph"
+    app:startDestination="@id/pageOneFragment">
+    <fragment
+        android:id="@+id/pageOneFragment"
+        android:name="com.example.instagramclone.fragments.PageOneFragment"
+        android:label="fragment_page_three"
+        tools:layout="@layout/fragment_page_three" >
+        <action
+            android:id="@+id/action_pageOneFragment_to_pageTwoFragment"
+            app:destination="@id/pageTwoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pageTwoFragment"
+        android:name="com.example.instagramclone.fragments.PageTwoFragment"
+        android:label="PageTwoFragment" >
+        <action
+            android:id="@+id/action_pageTwoFragment_to_pageThreeFragment"
+            app:destination="@id/pageThreeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pageThreeFragment"
+        android:name="com.example.instagramclone.fragments.PageThreeFragment"
+        android:label="PageThreeFragment" />
+</navigation>
